@@ -1,0 +1,35 @@
+.experience {
+  background: #f3c5bd;
+  background: -moz-linear-gradient(
+    -45deg,
+    #f3c5bd 0%,
+    #ea2803 24%,
+    #e86c57 50%,
+    #ff6600 73%,
+    #c72200 91%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    #f3c5bd 0%,
+    #ea2803 24%,
+    #e86c57 50%,
+    #ff6600 73%,
+    #c72200 91%
+  );
+  background: linear-gradient(
+    135deg,
+    #f3c5bd 0%,
+    #ea2803 24%,
+    #e86c57 50%,
+    #ff6600 73%,
+    #c72200 91%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=1 );
+
+  @media (max-width: 768px) {
+    .col--50 {
+      width: 100%;
+      flex-basis: 100%;
+    }
+  }
+}

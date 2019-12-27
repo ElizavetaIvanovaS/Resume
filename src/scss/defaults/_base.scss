@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font: 400 18px/1 "Indie Flower", Arial, Tahoma, sans-serif;
+}
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.container {
+  position: relative;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+section {
+  padding: 100px 0 100px;
+}
+.row {
+  display: flex;
+  margin: 0 -7px;
+  flex-wrap: wrap;
+}
+.col {
+  min-height: 270px;
+  padding: 7px;
+
+  &--25 {
+    @extend .col;
+    width: 25%;
+    flex-basis: 25%;
+  }
+
+  &--50 {
+    @extend .col;
+    width: 50%;
+    flex-basis: 50%;
+  }
+
+  &--light-blue {
+    background: rgb(126, 45, 45);
+  }
+  &--blue {
+    background: rgb(141, 21, 47);
+  }
+
+  &--dark-blue {
+    background: rgb(36, 216, 96);
+  }
+  &--red {
+    background: rgb(75, 49, 226);
+  }
+}
+.column {
+  height: 100%;
+  padding: 60px 43px 65px;
+  background-image: -moz-linear-gradient(
+    45deg,
+    rgba(158, 53, 103, 0.3) 0%,
+    rgba(93, 35, 96, 0.3) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(158, 53, 105, 0.3) 0%,
+    rgba(93, 35, 96, 0.3) 100%
+  );
+  background-image: -ms-linear-gradient(
+    45deg,
+    rgba(158, 53, 105, 0.3) 0%,
+    rgba(93, 35, 96, 0.3) 100%
+  );
+  background-image: linear-gradient(
+    45deg,
+    rgba(158, 53, 105, 0.3) 0%,
+    rgba(93, 35, 96, 0.3) 100%
+  );
+
+  &__text {
+    padding: 30px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+
+    &:last-child {
+      border: none;
+      padding-bottom: 0;
+    }
+
+    .date {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.7);
+      margin: 0 0 18px;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.702);
+      line-height: 1.2;
+    }
+    h5 {
+      margin: 0 0 18px;
+      color: #fff;
+    }
+  }
+}
+
+.title-26 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 60px;
+}
+input,
+textarea {
+  border-style: none;
+  width: 100%;
+}

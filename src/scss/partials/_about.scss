@@ -1,0 +1,51 @@
+.about {
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__image {
+    width: 50%;
+  }
+  &__info {
+    width: 50%;
+    text-align: center;
+
+    h1 {
+      font-size: 24px;
+      margin: 40px 0 30px;
+    }
+
+    p {
+      color: rgb(75, 71, 71);
+      margin-bottom: 30px;
+    }
+
+    p + p {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__info-button {
+    .button-red {
+      background: $red;
+      padding: 10px 40px;
+      color: #fff;
+      border-style: none;
+      border-radius: 4px;
+      font-size: 18px;
+      font-family: "Indie Flower", cursive;
+      width: 200px;
+      margin: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    &__info {
+      width: 100%;
+    }
+    &__image {
+      display: none;
+    }
+  }
+}

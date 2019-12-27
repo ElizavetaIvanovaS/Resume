@@ -1,0 +1,39 @@
+.info {
+  background-color: $aqua;
+
+  &__content {
+    p {
+      width: 40%;
+      margin: 0 0 50px;
+    }
+
+    .quotes {
+      margin: 0 0 45px;
+    }
+
+    .sign {
+      margin: 0 0 28px;
+    }
+
+    .name {
+      margin: 0 0 18px;
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 768px) {
+    &__content {
+      p {
+        width: 80%;
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    &__content {
+      p {
+        width: 100%;
+        text-align: justify;
+      }
+    }
+  }
+}

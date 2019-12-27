@@ -1,0 +1,42 @@
+.process {
+  background-color: #f6f6f6;
+  text-align: center;
+  width: 100%;
+
+  &__wrapper {
+    h1 {
+      margin-bottom: 25px;
+      font-size: 32px;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__box-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__box {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+  }
+  &__box-blue {
+    background-color: $blue;
+  }
+  &__box-lilac {
+    background-color: $lilac;
+  }
+  &__box-dark {
+    background-color: $dark-blue;
+  }
+  &__box-red {
+    background-color: $red;
+  }
+  img {
+    margin: 85px 0 45px;
+  }
+}
